@@ -1,0 +1,61 @@
+﻿Design Document
+Brody Mingo
+Image Editor
+
+
+
+
+Data
+Image display - 2D array of int
+File pointers - user image, edits?
+Editing Mode - bool
+Crop - 2D array
+Dim - int
+Brighten - int
+continue choice - char
+
+
+Purpose
+The program should be able to perform multiple functions from a menu, based on the user’s choice. Some of the options the user will be able to do are displaying an image, adjusting the brightness & diming the image, & cropping an image. Once the user is done, they can download their edited image & exit the program. The edited image is then saved onto their drive.
+
+
+Functions
+main()
+Data: arrays for image & edits. Variables for crop, dim, & brighten
+Functionality: essentially the menu for the program, let’s the user choose any of the options listed.
+
+
+getUserImage()
+Input Parameters: user’s file, 2D array of int
+Returned Output: none
+Functionality: just gets the user’s input image for the program
+
+
+displayImage()
+Input Parameters: File pointer, 2D array of int
+Returned Output: user’s image(greyscale only)
+Functionality: speaks for itself, displays the user’s image.
+
+
+cropImage()
+Input Parameters: File Pointer, 2D array of int
+Returned Output: crop
+Functionality: lets the user crop the image to their liking
+
+
+dimImage()
+Input Parameters: File pointer, int
+Returned Output: dim
+Functionality: lets the user dim the image.
+
+
+brightenImage()
+Input Parameters: File Pointer, int
+Returned Output: brighten
+Functionality: lets the user brighten the image up
+
+
+saveEditedImage()
+Input Parameters: File Pointer, bool
+Returned Output: edited Image
+Functionality: saves the user’s edited image & exports it to the computer’s downloads folder. The user can then view the jpg/png file
