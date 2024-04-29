@@ -1,0 +1,53 @@
+﻿Final Project Design:
+Main Function Algorithm:
+1. Display a welcome message.
+2. Initialize variables and data structures for storing the image.
+3. Enter a loop for displaying the main menu: a. Display the main menu options: load a new image, display the current image, edit the current image, exit. b. Prompt the user to select an option. c. Based on the user's choice:
+   * If "load a new image" is chosen: i. Prompt the user for the file name. ii. Attempt to read the contents of the image file.
+   * If "display the current image" is chosen: i. Display the current image using the brightness-to-character mapping.
+   * If "edit the current image" is chosen: i. Enter a loop for displaying the edit menu:
+      * Prompt the user to select an edit option.
+      * Based on the user's choice:
+         * Perform the corresponding edit operation on the image.
+         * Display the edited image.
+         * Prompt the user to save the edited image to a file.
+         * If the user agrees to save:
+            * Prompt the user for a file name.
+            * Save the edited image to the specified file.
+            * Exit the edit menu loop.
+         * Return to the edit menu loop.
+   * If "exit" is chosen: i. Exit the program.
+Function Algorithms:
+1. Load Image Function: loadImage()
+   * Inputs: File name
+   * Output: Image data structure
+   * Algorithm:
+      1. Open the specified file.
+      2. Read the contents of the file and store them in an appropriate data structure representing the image.
+      3. Close the file.
+      4. Return the image data structure.
+      5. 2. Display Image Function: displayImage()
+   * Inputs: Image data structure
+   * Output: None
+   * Algorithm:
+      1. Loop through the image data structure.
+      2. Map each brightness value to its corresponding character according to the provided table.
+      3. Display the characters to represent the image.
+3. Crop Function: Crop()
+   * Inputs: Image data structure, crop coordinates
+   * Output: Cropped image data structure
+   * Algorithm:
+      1. Extract the specified portion of the original image based on the provided coordinates.
+      2. Return the cropped image data structure.
+4. Dim Function: Dim()
+   * Inputs: Image data structure
+   * Output: Dimmed image data structure
+   * Algorithm:
+      1. Decrease the brightness value of each pixel by one step.
+      2. Return the dimmed image data structure.
+5. Brighten Function: Brighten()
+   * Inputs: Image data structure
+   * Output: Brightened image data structure
+   * Algorithm:
+      1. Increase the brightness value of each pixel by one step.
+      2. Return the brightened image data structure.
