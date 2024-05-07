@@ -97,18 +97,28 @@ void editImage(int image[MAX_SIZE][MAX_SIZE], int rows, int cols) {
 }
 
 void cropImage(int image[MAX_SIZE][MAX_SIZE], int *rows, int *cols) {
-    
+    printf("Enter an a row to crop \n");
+    scanf(" ", );
+    printf("Enter a column to crop \n");
+    scanf(" ", );
 }
 
 void dimImage(int image[MAX_SIZE][MAX_SIZE], int rows, int cols) {
-    
+    printf("How much would you like to dim the current image? \n");
+    scanf(" ", );
 }
 
 void brightenImage(int image[MAX_SIZE][MAX_SIZE], int rows, int cols) {
-    
+    printf("How much would you like to brighten the current image? \n");
+    scanf(" ", );
 }
 
 void saveImage(int image[MAX_SIZE][MAX_SIZE], int rows, int cols) {
-    
+    printf("Would you like to save the edited image? \n");
+    	if( ){
+    	
+    	}else{
+    	
+    	}
 }
 
